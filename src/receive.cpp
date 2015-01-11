@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
 
         myfile.open("rapport.txt",ios::app);
-        myfile<<s->getTemperature()<<";"<<timeinfo->tm_hour<<":"<<timeinfo->tm_min<<endl;
+        myfile << s->getTemperature() << ";" << s->getHumidity() << ";" << timeinfo->tm_hour << ":" << timeinfo->tm_min<<endl;
         myfile.close();
         printf("Temp : %f\n",s->getTemperature());
         printf("Humidity : %f\n",s->getHumidity());
